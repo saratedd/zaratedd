@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Photography Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>YourName</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Capturing Life's <span class="highlight">Beautiful Moments</span></h1>
+            <p>Professional photographer specializing in portraits, landscapes, and lifestyle photography</p>
+            <a href="#portfolio" class="cta-btn">View My Work</a>
+        </div>
+        <div class="hero-image">
+            <div class="image-placeholder">
+                <i class="fas fa-camera"></i>
+                <p>Your Featured Photo Here</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Welcome to my photography world! I'm passionate about capturing authentic moments and creating visual stories that resonate with viewers. With years of experience in various photography styles, I specialize in bringing out the natural beauty in every shot.</p>
+                    <p>Whether it's the intimate emotions of a portrait session, the breathtaking vastness of landscapes, or the candid moments of street photography, I strive to create images that tell compelling stories.</p>
+                    <div class="skills">
+                        <div class="skill-item">
+                            <i class="fas fa-user"></i>
+                            <span>Portrait Photography</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-mountain"></i>
+                            <span>Landscape Photography</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-road"></i>
+                            <span>Street Photography</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-heart"></i>
+                            <span>Wedding Photography</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user-circle"></i>
+                        <p>Your Photo Here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            
+            <!-- Category Filter -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="portraits">Portraits</button>
+                <button class="filter-btn" data-filter="landscapes">Landscapes</button>
+                <button class="filter-btn" data-filter="street">Street</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="macro">Macro</button>
+            </div>
+
+            <!-- Image Gallery -->
+            <div class="gallery">
+                <!-- Portraits -->
+                <div class="gallery-item portraits">
+                    <div class="image-container">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user"></i>
+                            <p>Portrait 1</p>
+                        </div>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Portrait Session</h3>
+                                <p>Beautiful natural light portrait</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item portraits">
+                    <div class="image-container">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user"></i>
+                            <p>Portrait 2</p>
+                        </div>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Studio Portrait</h3>
+                                <p>Professional headshot session</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Landscapes -->
+                <div class="gallery-item landscapes">
+                    <div class="image-container">
+                        <div class="image-placeholder">
+                            <i class="fas fa-mountain"></i>
+                            <p>Landscape 1</p>
+                        </div>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Mountain Vista</h3>
+                                <p>Sunrise over the peaks</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item landscapes">
+                    <div class="image-container">
+                        <div class="image-placeholder">
+                            <i class="fas fa-tree"></i>
+                            <p>Landscape 2</p>
+                        </div>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Forest Path</h3>
+                                <p>Misty morning in the woods</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Street Photography -->
+                <div class="gallery-item street">
+                    <div class="image-container">
+                        <div class="image-placeholder">
+                            <i class="fas fa-road"></i>
+                            <p>Street 1</p>
+                        </div>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Urban Life</h3>
+                                <p>Candid city moments</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item street">
+                    <div class="image-container">
+                        <div class="image-placeholder">
+                            <i class="fas fa-city"></i>
+                            <p>Street 2</p>
+                        </div>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>City Lights</h3>
+                                <p>Night photography</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Events -->
+                <div class="gallery-item events">
+                    <div class="image-container">
+                        <div class="image-placeholder">
+                            <i class="fas fa-heart"></i>
+                            <p>Event 1</p>
+                        </div>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Wedding Day</h3>
+                                <p>Capturing love and joy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item events">
+                    <div class="image-container">
+                        <div class="image-placeholder">
+                            <i class="fas fa-glass-cheers"></i>
+                            <p>Event 2</p>
+                        </div>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Celebration</h3>
+                                <p>Corporate event photography</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Macro -->
+                <div class="gallery-item macro">
+                    <div class="image-container">
+                        <div class="image-placeholder">
+                            <i class="fas fa-search"></i>
+                            <p>Macro 1</p>
+                        </div>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Nature Details</h3>
+                                <p>Close-up flower photography</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item macro">
+                    <div class="image-container">
+                        <div class="image-placeholder">
+                            <i class="fas fa-leaf"></i>
+                            <p>Macro 2</p>
+                        </div>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Texture Study</h3>
+                                <p>Abstract macro photography</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Work Together</h3>
+                    <p>Ready to capture your special moments? I'd love to hear about your photography needs and discuss how we can create something beautiful together.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>your.email@example.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Your City, Country</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Select Service</option>
+                                <option value="portrait">Portrait Session</option>
+                                <option value="wedding">Wedding Photography</option>
+                                <option value="event">Event Photography</option>
+                                <option value="commercial">Commercial Work</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Tell me about your project" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Your Name Photography. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Image Magnifier -->
+    <div id="magnifier" class="magnifier"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
